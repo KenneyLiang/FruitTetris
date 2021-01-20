@@ -1,7 +1,7 @@
 # FruitTetris
 
 ## Table of contents
-* [Instructions](#instructions)
+* [How to play](https://github.com/KenneyLiang/FruitTetris#instructions)
 
 
-## Instructions
+## How to play
