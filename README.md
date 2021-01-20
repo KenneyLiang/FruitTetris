@@ -32,7 +32,7 @@ A random Tetris tile consisting of four fruits will descend from the top of the 
 * &#8593	Rotate the tile counterclockwise 
 * &#8595	Accelerates the downward movement
 * &#8592	Move the tile 1 position to the left 
-* &#10141	Move the tile 1 position to the right
+* &rightarrow	Move the tile 1 position to the right
 
 ## Compiling in Linux
 ## Compiling in Windows 10 using Visual Studio
