@@ -25,15 +25,16 @@ FruitTetris is implemented using OpenGL and GLUT.
 
 ## Game Logics
 
-A random Tetris tile consisting of four fruits will descend from the top of the grid. During this descent, the player can move the pieces laterally and rotate them until they have landed on the bottom of the grid or on a piece that had been placed before it. The objective of the game is to use the pieces to create as many horizontal lines of blocks as possible. Each filled horizontal lines will disappear.
+A random Tetris tile consisting of four fruits will descend from the top of the grid. During this descent, the player can move the pieces laterally and rotate them until they have landed on the bottom of the grid or on a piece that had been placed before it. The objective of the game is to use the pieces to create as many horizontal lines of blocks as possible. Each filled horizontal lines will disappear. The game will termiante if the pieces reached to the top and prevents the arrivial of additional pieces.
 
 ## Game Controls
 
-* &#8593	Rotate the tile counterclockwise 
-* &#8595	Accelerates the downward movement
-* &#8592	Move the tile 1 position to the left 
-* &rightarrow	Move the tile 1 position to the right
-
+* :arrow_up:	Rotate the tile counterclockwise 
+* :arrow_down:	Accelerates the downward movement
+* :arrow_left:	Move the tile 1 position to the left 
+* :arrow_right:	Move the tile 1 position to the right
+* 'Q' to quit
+* 'R' to restart
 ## Compiling in Linux
 ## Compiling in Windows 10 using Visual Studio
 ## How to setup OpenGL and Freeglut in Linux
