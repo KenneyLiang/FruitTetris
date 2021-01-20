@@ -1,7 +1,16 @@
 # FruitTetris
 
 ## Table of contents
-* [How to play](https://github.com/KenneyLiang/FruitTetris#instructions)
+
+* [Game Controls](https://github.com/KenneyLiang/FruitTetris#how-to-play)
+* [How to Compile]
+* [How to setup OpenGL and Freeglut in Linux](https://github.com/KenneyLiang/FruitTetris#how-to-play)
+* [How to setup OpenGL and Freeglut in Windows 10 using Visual Studio](https://github.com/KenneyLiang/FruitTetris#how-to-play)
 
 
-## How to play
+
+
+## Game Controls
+## How to Compile
+## How to setup OpenGL and Freeglut in Linux
+## How to setup OpenGL and Freeglut in Windows 10 using Visual Studio
