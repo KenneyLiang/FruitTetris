@@ -64,28 +64,40 @@ sudo apt -get install freeglut3 -dev
 
 
 ## How to setup OpenGL and Freeglut in Windows 10 with Visual Studio
-* Step 1: [Download and Install Visual Studio](https://visualstudio.microsoft.com/downloads/)
+* Step 1: [Download and Install Visual Studio](https://visualstudio.microsoft.com/downloads/)  
 	1. Choose **Desktop development with C++** in Worloads when installing
 
-* Step 2: [Download OpenGL library](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)
-	1. Scroll to **GLUT for Microsoft Windows 9X, ME, 2000, NT & XP users** section
-	2. Click and download **glutdlls37beta.zip** file
+* Step 2: [Download OpenGL library](https://www.opengl.org/resources/libraries/glut/glut_downloads.php)  
+	1. Scroll to **GLUT for Microsoft Windows 9X, ME, 2000, NT & XP users** section  
+	2. Click and download **glutdlls37beta.zip** file  
 
 * Step 3: Environment Setup
-	- Part 1
-		1. Open **glutdlls37beta.zip**
-		1. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64*"
-		1. Copy **glut.lib** and **glut32.lib** and paste them into this directory
-		1. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86*"
-		1. Copy **glut.lib** and **glut32.lib** and paste them into this directory
-		1. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include*"
-		1. Copy **glut.h** and **glut.dll** paste them into this directory
-		1. Create a new folder name "*gl*" in  "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include*"
-		1. Copy **glut.h** and **glut.dll** and paste them into the new folder
-	- Part 2
+	1. Part 1  
+		1. Open **glutdlls37beta.zip**  
+
+		2. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64*"  
+
+		3. Copy **glut.lib** and **glut32.lib** and paste them into this directory  
+
+		4. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86*"
+
+		5. Copy **glut.lib** and **glut32.lib** and paste them into this directory
+
+		6. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include*"
+
+		7. Copy **glut.h** and **glut.dll** paste them into this directory
+
+		8. Create a new folder name "*gl*" in  "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include*"
+
+		9. Copy **glut.h** and **glut.dll** and paste them into the new folder
+
+	2. Part 2
 		1. Go to "*C:\Windows\System32*"
-		1. Copy **glut32.dll** and paste it into this directory
-		1. Go to "*C:\Windows\SysWOW64*"
-		1. Copy **glut32.dll** and paste it into this directory
+		
+		2. Copy **glut32.dll** and paste it into this directory
+		
+		3. Go to "*C:\Windows\SysWOW64*"
+		
+		4. Copy **glut32.dll** and paste it into this directory
 
 * Step 6: Run Visual Studio as usual
