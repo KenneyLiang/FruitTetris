@@ -15,7 +15,6 @@ FruitTetris is implemented using OpenGL and GLUT.
 
 
 
-
 ## Table of contents
 
 * [Game Controls](https://github.com/KenneyLiang/FruitTetris#game-controls)
@@ -44,11 +43,12 @@ The game will termiante if the pieces reached to the top and prevents the arrivi
 * 'R' to restart
 
 
+
 ## Note Before Compiling
 
 If you are compiling in Linux:
-* Remove line 1 (#include<windows.h>) in FruitTetris.cpp and grid.cpp
-* Simply type 'make' in the terminal
+* Remove line 1 in FruitTetris.cpp and grid.cpp. This line, #include<windows.h>, will not work in Linux.
+* Simply type 'make' in the terminal to compile
 
 
 
@@ -62,4 +62,8 @@ sudo apt -get install freeglut3 -dev
 ```
 
 
+
 ## How to setup OpenGL and Freeglut in Windows 10 with Visual Studio
+* Step 1: [Download and Install Visual Studio](https://visualstudio.microsoft.com/downloads/)
+	* Choose 'Desktop development with C++' in Worloads when installing
+
