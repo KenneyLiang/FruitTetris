@@ -56,10 +56,10 @@ If you are compiling in Linux:
 
 If you don't have Freeglut installed in Linux, you can run the following command in the terminal to get Freeglut:
 
-'''
+```
 sudo apt -get install freeglut3 -dev
 
-'''
+```
 
 
 ## How to setup OpenGL and Freeglut in Windows 10 with Visual Studio
