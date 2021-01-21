@@ -440,6 +440,7 @@ void clear_fruits( int *array_matrix, int width, int height, int *fruits){
 
 
 int find_clearing_fruits_vertical(Game *game, int *array_matrix, int width, int height){
+    
     int count = 0;
     
     for(int row = 1; row < height - 1; row++){
@@ -575,6 +576,7 @@ void update_game(Game *game){
 }
 
 void draw_square(int row, int col, int value, int offset_x, int offset_y){
+
     glLineWidth(1.0);
 
     if (value == 1){
@@ -603,6 +605,7 @@ void draw_square(int row, int col, int value, int offset_x, int offset_y){
 
 
 void draw_piece(Piece *piece, int offset_x, int offset_y){
+
     Tetromino *tetromino = TETRINOS + piece-> index;
     
     for( int row = 0; row < tetromino->size; row++){
@@ -637,7 +640,6 @@ void draw_board(int* board, int width, int height,
 
 void restart(Game *game){
     
-
     for(int row = 0; row < ROWS; row++){
 
         for(int col = 0; col < COLUMNS; col++){
@@ -715,7 +717,6 @@ void reshape(int w, int h){
 
 
 void timer(int){
-
 	glutPostRedisplay();
 	glutTimerFunc(1000/FPS, timer, 0);
 }
@@ -725,7 +726,6 @@ void keyboard(unsigned char key, int x, int y){
 	switch (key)
 	{
 	case 'q':       //exit
-		
         exit(0);
 		break;
     case 'r':       //restart

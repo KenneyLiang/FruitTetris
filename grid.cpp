@@ -6,7 +6,6 @@
 #include <cassert>
 
 
-
 int gridX, gridY;
 
 void initGrid(int x, int y){
