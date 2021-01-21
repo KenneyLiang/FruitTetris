@@ -72,20 +72,20 @@ sudo apt -get install freeglut3 -dev
 	2. Click and download **glutdlls37beta.zip** file
 
 * Step 3: Environment Setup
-	* Part 1
+	- Part 1
 		1. Open **glutdlls37beta.zip**
 		1. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x64*"
-		1. Copy **glut.lib** and **glut32.lib** into this directory
+		1. Copy **glut.lib** and **glut32.lib** and paste them into this directory
 		1. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86*"
-		1. Copy **glut.lib** and **glut32.lib** into this directory
+		1. Copy **glut.lib** and **glut32.lib** and paste them into this directory
 		1. Go to "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include*"
 		1. Copy **glut.h** and **glut.dll** paste them into this directory
 		1. Create a new folder name "*gl*" in  "*C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include*"
 		1. Copy **glut.h** and **glut.dll** and paste them into the new folder
-	* Part 2
+	- Part 2
 		1. Go to "*C:\Windows\System32*"
 		1. Copy **glut32.dll** and paste it into this directory
 		1. Go to "*C:\Windows\SysWOW64*"
 		1. Copy **glut32.dll** and paste it into this directory
 
-* Step 6: Run Visual Studio
+* Step 6: Run Visual Studio as usual
