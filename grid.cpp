@@ -1,4 +1,4 @@
-#include<windows.h>     //Delete if being compiled in Linux
+#include<windows.h>     //Delete if being compiling in Linux
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <ctime>

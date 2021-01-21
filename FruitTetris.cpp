@@ -1,16 +1,16 @@
+#include<windows.h>     //Delete if being compiling in Linux
 #include<stdio.h>
 #include<iostream>
 #include<stdlib.h>
-#include<windows.h>     //Delete if being compiled in Linux
 #include<GL/gl.h>
 #include<GL/glut.h> 
 #include<math.h>
 #include "grid.h"
-#include <cassert> // for assertion 
-#include <cstring> //for memeset and memecpy
+#include <cassert>      // for assertion 
+#include <cstring>      //for memeset and memecpy
 
-#define FPS 3     // Frames per Second
-#define COLUMNS 10 //grid size
+#define FPS 3           // Frames per Second
+#define COLUMNS 10      //grid size
 #define ROWS 20
 bool UP = false;
 bool DOWN = false;
@@ -38,7 +38,7 @@ struct Piece{
 
 struct Game{
     Piece piece;
-    int board[ROWS*COLUMNS];    //the game space
+    int board[ROWS*COLUMNS];     //the game space
     int lines[ROWS];            //lines that are fill will have a value of 1         
     int cleared_lines;          //lines cleared
     int pending_clear_fruits[ROWS* COLUMNS];    //consecutive fruits in a row to be cleared
@@ -47,7 +47,7 @@ struct Game{
 };
 
 
-Tetromino tetromino(int *value, int size){  // constructor function
+Tetromino tetromino(int *value, int size){      // constructor function
 	return {value, size};
 }
 
@@ -167,7 +167,7 @@ int get_tetromino_rotation_value(Tetromino *tetromino, int row, int col, int rot
     default:
         break;
     }
-    return 0 ; //error case
+    return 0 ;      //error case
 }
 
 int check_termination_row_filled(int *array_matrix, int width, int row){
@@ -234,14 +234,14 @@ void clear_filled_lines(int *array_matrix, int width, int height, int *lines_to_
 bool validate_piece( Piece *piece, int *board,int width, int height){
     Tetromino *tetromino = TETRINOS + piece-> index;
     
-    assert(tetromino); //if it's true, do nothing, else program terminates
+    assert(tetromino);      //if it's true, do nothing, else program terminates
 
     for (int row = 0; row < tetromino->size; row++)
     {
         for (int col = 0; col < tetromino->size; col++ ){
             int value = get_tetromino_rotation_value( tetromino, row, col, piece->rotation);
 
-            if(value > 0){          // if there is a piece
+            if(value > 0){      // if there is a piece
                 int board_row = piece->offset_row + row;
                 int board_col = piece->offset_col + col;
 
@@ -258,7 +258,7 @@ bool validate_piece( Piece *piece, int *board,int width, int height){
                     piece->offset_col = posX;
                     return false;
                 }
-                if ( get_matrix_value(board, width,board_row,board_col) > 0){  // has a piece in that position 
+                if ( get_matrix_value(board, width,board_row,board_col) > 0){       // has a piece in that position 
                     return false;               //collision detection
                 }
 
@@ -268,7 +268,7 @@ bool validate_piece( Piece *piece, int *board,int width, int height){
         }
         
     }
-    return true;   //valid
+    return true;    //valid
 }
 
 void stack_piece(Game* game){
@@ -361,7 +361,7 @@ void dropdown(Game* game){
     if(validate_piece(&game->piece, game->board, COLUMNS, ROWS) == false){
         --game->piece.offset_row;
         stack_piece(game);
-        spawn_piece(game);  //spawn after the piece has landed
+        spawn_piece(game);      //spawn after the piece has landed
     }
 }
 
