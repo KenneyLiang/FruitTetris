@@ -4,11 +4,11 @@ FruitTetris is a simple interative game that combines the features of Tetris and
 
 
 The different colours correspnds to differernt fruits:
-* Purple = Grapes
-* Red = Apples
-* Yellow = Bananas
-* Green = Pears
-* Orange = Orange
+* Purple = Grapes :grapes:
+* Red = Apples :apple:
+* Yellow = Bananas :banana:
+* Green = Pears :pear: 
+* Orange = Orange :tangerine:
 
 
 FruitTetris is implemented using OpenGL and GLUT. 
