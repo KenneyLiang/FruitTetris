@@ -17,9 +17,9 @@ FruitTetris is implemented using OpenGL and GLUT.
 
 ## Table of contents
 
+* [Game Logics](https://github.com/KenneyLiang/FruitTetris#game-logics)
 * [Game Controls](https://github.com/KenneyLiang/FruitTetris#game-controls)
-* [Compiling in Windows 10 using Visual Studio](https://github.com/KenneyLiang/FruitTetris#how-to-compile)
-* [Compiling in Linux]()
+* [Note Before Compiling](https://github.com/KenneyLiang/FruitTetris#note-before-compiling)
 * [How to setup OpenGL and Freeglut in Linux](https://github.com/KenneyLiang/FruitTetris#how-to-setup-opengl-and-freeglut-in-linux)
 * [How to setup OpenGL and Freeglut in Windows 10 with Visual Studio](https://github.com/KenneyLiang/FruitTetris#how-to-setup-opengl-and-freeglut-in-windows-10-with-visual-studio)
 
