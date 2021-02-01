@@ -27,7 +27,7 @@ FruitTetris is implemented using OpenGL and GLUT.
 
 ## Game Logics
 
-A random Tetris tile consisting of four fruits will descend from the top of the grid. During this descent, the player can move the pieces laterally and rotate them until they have landed on the bottom of the grid or on a piece that had been placed before it. The objective of the game is to use the pieces to create as many horizontal lines of blocks as possible. Each filled horizontal lines will disappear. When three of the same fruit are consecutive in a row or column, they will disappear and the fruis from above will fall down 1 row for each tiles that disappeared. 
+A random Tetris tile consisting of four fruits will descend from the top of the grid. During this descent, the player can move the pieces laterally and rotate them until they have landed on the bottom of the grid or on a piece that had been placed before it. The objective of the game is to use the pieces to create as many horizontal lines of blocks as possible. Each filled horizontal lines will disappear and blocks placed above will fall down. When three of the same fruit are consecutive in a row or column, they will disappear and the fruis from above will fall down 1 row for each tiles that disappeared. 
 
 The game will termiante if the pieces reached to the top and prevents the arrivial of additional pieces. 
 
